@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Contacto{% endblock title %}
+
+{% block meta %}
+Puedes contactarme en mis redes sociales.
+{% endblock meta %}
+
+{% block background %}{% static 'core/img/contact-bg.jpg' %}{% endblock background %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock headers %}
+
+{% block content %}
+    <!-- Contenido Principal -->
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Te puedo asesores en proyecto tecnológicos de Python, Java, PHP, SEO y Marketing Digital.</p>
+            <p><a href="https://www.linkedin.com/in/luis-casares-b9820532/">LinkedIN</a></p>
+            <p><a href="https://refillcreativo.com" target="_blank">Refill Creativo</a></p>
+          </div>
+        </div>
+      </div>
+{% endblock content %}

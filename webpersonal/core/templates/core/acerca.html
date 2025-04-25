@@ -1,0 +1,37 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Acerca de{% endblock title %}
+
+{% block meta %}
+Soy Profe Luis me gusta la programación, el marketing digital y las mascotas
+{% endblock meta %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock background %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock headers %}
+
+{% block content %}
+     <!-- Contenido Principal -->
+     <div class="container">
+        <div class="row">   
+          <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar.webp' %}" alt="Imagen avatar">
+          </div>
+          <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Luis Casares</h2>   
+            <p>14 años de experiencia trabajando en docencia e iniciativa privada y publica</p>
+            <p>Docente de programación Web desde hace 15 años, con proyectos enfocados en soluciones con PHP, Java y Python.</p>
+            <p>Marketing Digital con estrategias SEO</p>
+            <p>Implementación de soluciones de comercio electrónico</p>
+            <p>Integraciones API</p>
+            <p>Dropshipping, web scraping</p>
+            <p>WordPress</p>
+          </div>
+        </div>  
+      </div>
+{% endblock content %}
